@@ -124,13 +124,17 @@ function uniq(arr, callback) {
         if (!newArr.includes(arr[i])) {
             newArr.push(arr[i]);
         }
-
-        // for (let j = i + 1; j < arr.length; j++) {
-        //     if (arr[i] === arr[j]) {
-        //         arr.splice(i, 1);
-        //     }
-        // }
     }
+
+    // for (let i = 0; i < arr.length; i++) {
+    //     for (let j = i + 1; j < arr.length; j++) {
+    //         if (arr[i] === arr[j]) {
+    //             arr.splice(j, 1);
+    //         }
+    //     }
+    // }
+
+    // callback(arr);
 
     callback(newArr);
 }
